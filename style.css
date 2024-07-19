@@ -1,0 +1,120 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.woff2);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+
+
+
+html, body{
+    height: 100%;
+    width:100%;
+}
+
+#loader {
+    height:100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+#loader h3 {
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+#page1{
+    height: 100vh; /* vh=viewport height
+    we haven't used % as it is considered according parent , but we haven't set value of parent */
+    width:100%;
+    background-color: #C3BCB2;
+    position: relative;
+}
+
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.12vw;
+    font-weight: 500;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav{
+    /* height: 110px;*/
+    width: 100%;
+    /* padding: 0 30px; */  
+    display: flex; /*To align all items in a single row */
+    align-items: center; /*Center items at y-axis */
+    justify-content: space-between; /*Center items at X-axis */
+    /* border-bottom: 1px solid #222; */
+}
+
+nav>img{
+    height:60px;
+    font-weight: 100;
+}
+
+nav h4{
+    font-size: 1.4vw;
+}
+
+#page1-content h1{
+    font-family: rejoy;
+    font-size: 20vw;
+    font-weight: 100;
+    line-height: 27vw;
+
+}
+
+#page1-content h1 span{
+    display: inline-block;
+    font-family: rejoy;
+}
+
